@@ -66,10 +66,11 @@ void quicksort(int arr[], int first, int last){
 }
 
 int main(){
-   int arr[] = { 4, 3, 5, 2, 1, 3, 2, 3 };
+   int arr[] = { 7, 11, 14, 6, 9, 4, 3, 12 };
    int n = sizeof(arr) / sizeof(arr[0]);
     
-   quicksort(arr, 0, n-1);
+//    quicksort(arr, 0, n-1);
+    partition(arr, 0, n-1);
    
    printf("Sorted array:");
    for(int i = 0; i < n; i++)
